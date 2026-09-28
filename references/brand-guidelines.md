@@ -21,16 +21,17 @@ This is a compact deck-production reference, not a replacement for the full bran
 
 ## Logo rule
 
-- Logo placement is optional unless the supplied template requires it.
-- When a logo asset is supplied, default placement is the top-left corner with consistent safe-area padding and a size that does not compete with the headline.
-- Use the approved logo variant for the background; do not recolor, stretch, crop, or recreate the logo.
+- Canonical asset in this repository: `assets/the1ight-logo.jpg`.
+- Default placement is the top-left corner with consistent safe-area padding and a size that does not compete with the headline.
+- This asset is a light-background raster logo. Keep it on a light or white logo area; do not recolor, stretch, crop, or recreate it.
+- Because the supplied image is 361×185 JPEG, use it at modest display size and do not upscale it aggressively. Request an SVG or transparent PNG for high-resolution export when needed.
 - Keep the logo out of dense screenshot or activity areas.
-- If no approved logo asset/template is supplied, mark logo placement as unverified and do not fabricate one.
+- If another approved logo variant/template is supplied for a specific deck, use that variant instead and record the exception.
 
 ## Required inputs for deterministic visual output
 
 - Approved template or palette file.
-- Approved logo asset, preferably an SVG or transparent PNG.
+- Approved logo asset: `assets/the1ight-logo.jpg` (or a higher-resolution approved replacement).
 - Background mode: light/dark or per-slide rules.
 - Preferred font(s), if they are not embedded in the template.
 - Any footer or slide-number convention.
