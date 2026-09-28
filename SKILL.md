@@ -57,11 +57,55 @@ Keep a **preserve list** for strong examples, real classroom context, useful scr
 
 For each accepted finding, state the smallest edit, why it helps, and how it will be verified. Do not change learning outcomes, remove real examples, or rewrite the whole deck without explicit approval. Keep technical claims separate from copy improvements. Completion criterion: every proposed change maps to an accepted finding.
 
-### 5. Edit a copy only after approval
+### 5. Turn approved findings into a revision brief
 
-Write to a new output path, never over the source. Keep student-facing text separate from speaker notes. Questions should not reveal their answers before the reveal step. An activity must specify learner action, output, success check, debrief, time, and fallback. Completion criterion: output path exists and every changed slide is listed.
+Do not jump from a scorecard directly into rewriting. Convert only the accepted findings into a revision brief:
 
-### 6. Rescore the output
+```text
+Revision goal:
+Approved findings:
+Slides/sections in scope:
+Preserve list:
+Do not change:
+Copy changes:
+Structure changes:
+Activity changes:
+Technical claims to verify or qualify:
+Timing budget:
+Output path:
+Verification required:
+```
+
+The brief must distinguish **must fix**, **may improve**, and **out of scope**. If a finding changes the learning outcome, audience, duration, or teaching scope, stop and request a new design decision instead of treating it as a copy edit. Completion criterion: every edit has an approved finding or is explicitly labeled necessary for consistency.
+
+### 6. Revise a copy in passes
+
+Write to a new output path, never over the source. Use this order:
+
+1. **Structure pass:** fix section order, repeated slides, concept grouping, transitions, and the concept-to-practice rhythm.
+2. **Learning pass:** make each demo/activity include learner action, output, success check, debrief, time, and fallback.
+3. **Headline pass:** make headers state the point or learner action; check that each supporting element answers the header.
+4. **Copy pass:** simplify sentences, remove AI slop, preserve necessary conditions, and keep terminology consistent. Load `humanizer` only here.
+5. **Technical pass:** verify, qualify, or remove claims that depend on runtime/provider/version. Do not make unverified behavior sound more certain.
+6. **Visual pass:** apply the supplied template/brand rules only after content is stable; render when the toolchain allows it.
+
+Keep student-facing text separate from speaker notes. Questions must not reveal their answers before the reveal step. Do not delete useful examples, classroom context, or intentional question/reveal pairs without an accepted finding. Completion criterion: output path exists, every changed slide is listed, and each approved finding maps to a change or a documented reason it was not changed.
+
+### 7. Run revision QA before rescore
+
+Read the revised artifact as a fresh reviewer, not from the editor's summary. Check:
+
+- approved findings are actually resolved;
+- no preserve-list item disappeared without approval;
+- learning outcomes still have evidence;
+- no new claim, contradiction, or timing overflow was introduced;
+- question/reveal order works in slideshow mode;
+- notes/student-facing content remain separated;
+- source file is unchanged.
+
+Completion criterion: a revision QA list marks each approved finding resolved, partial, or not resolved, plus regressions and unverified checks.
+
+### 8. Rescore the output
 
 Run the same rubric on the actual revised artifact, not only on the editor's summary. Compare baseline/current scores, resolved findings, remaining findings, and regressions. Completion criterion: before/after table and remaining P0/P1/P2 list are present.
 
