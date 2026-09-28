@@ -31,9 +31,28 @@ references/rubric.md
 references/teaching-style.md
 references/activity-design.md
 references/review-report-template.md
+assets/the1ight-logo.jpg
 ```
 
 Start a new Hermes session after installation so the skill loader sees it.
+
+## Optional humanizer skill
+
+This repository also includes the `humanizer` skill under:
+
+```text
+bundled-skills/creative/humanizer/
+```
+
+To install it for Hermes, copy that folder to the sibling skill path:
+
+```bash
+mkdir -p ~/.hermes/skills/creative/humanizer
+cp bundled-skills/creative/humanizer/SKILL.md ~/.hermes/skills/creative/humanizer/
+cp bundled-skills/creative/humanizer/LICENSE ~/.hermes/skills/creative/humanizer/
+```
+
+If `HERMES_HOME` is set, replace `~/.hermes` with `$HERMES_HOME`. The humanizer is MIT-licensed; keep its `LICENSE` and attribution when redistributing it. `teaching-deck-review` uses it only during the copy pass. If it is not installed, the main skill falls back to its anti-slop rules and reports the missing dedicated pass.
 
 ## Usage
 
