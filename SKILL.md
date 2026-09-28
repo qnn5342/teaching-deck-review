@@ -28,7 +28,7 @@ Do not use this skill to approve technical claims without runtime or documentati
 
 ## Prerequisites
 
-Collect the deck path, audience, prior knowledge, duration, learning outcomes, runtime/tool version, and brand/template constraints. Load `powerpoint` for PPTX inspection; load `pdf` or `ocr-and-documents` for PDF benchmarks; load `humanizer` only for the copy pass. If a required fact is unavailable, mark it unverified.
+Collect the deck path, audience, prior knowledge, duration, learning outcomes, runtime/tool version, and brand/template constraints. Load `powerpoint` for PPTX inspection; load `pdf` or `ocr-and-documents` for PDF benchmarks; load `humanizer` only for the copy pass; load `references/brand-guidelines.md` when applying visual rules. If a required fact or asset is unavailable, mark it unverified.
 
 ## Procedure
 
@@ -109,7 +109,7 @@ Completion criterion: a revision QA list marks each approved finding resolved, p
 
 Run the same rubric on the actual revised artifact, not only on the editor's summary. Compare baseline/current scores, resolved findings, remaining findings, and regressions. Completion criterion: before/after table and remaining P0/P1/P2 list are present.
 
-### 7. Gate readiness
+### 9. Gate readiness
 
 Do not call a deck ready-to-teach until all are true:
 
@@ -128,6 +128,7 @@ If a gate is unavailable, report `unverified`; never convert missing evidence in
 - `references/rubric.md` — scorecard, thresholds, and evidence rules.
 - `references/teaching-style.md` — benchmark style distilled from the user's approved deck.
 - `references/activity-design.md` — demo/activity rhythm and activity contract.
+- `references/brand-guidelines.md` — compact visual rules and logo/asset requirements.
 - `references/review-report-template.md` — required report shape.
 
 ## Pitfalls
