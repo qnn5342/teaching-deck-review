@@ -28,7 +28,7 @@ Do not use this skill to approve technical claims without runtime or documentati
 
 ## Prerequisites
 
-Collect the deck path, audience, prior knowledge, duration, learning outcomes, runtime/tool version, and brand/template constraints. Load `powerpoint` for PPTX inspection; load `pdf` or `ocr-and-documents` for PDF benchmarks; load `humanizer` only for the copy pass; load `references/brand-guidelines.md` when applying visual rules. If a required fact or asset is unavailable, mark it unverified.
+Collect the deck path, audience, prior knowledge, duration, learning outcomes, runtime/tool version, and brand/template constraints. Load `powerpoint` for PPTX inspection; load `pdf` or `ocr-and-documents` for PDF benchmarks; load `humanizer` only for the copy pass when it is installed. If `humanizer` is unavailable, apply the anti-slop rules in `references/teaching-style.md` and report that the dedicated humanizer pass was unavailable. Load `references/brand-guidelines.md` when applying visual rules. If a required fact or asset is unavailable, mark it unverified.
 
 ## Procedure
 
